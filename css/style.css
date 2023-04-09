@@ -69,6 +69,45 @@ span {
     transition-duration: 0.25s;
 }
 
+#contacto-index{
+  background-color: #212121;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+#reviews-index{
+  background-color: white;
+  color: #212121;
+  text-align: center;
+  padding: 50px;
+}
+
+.review {
+  background-color: #212121;
+  color: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.review img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.review p:first-child {
+  margin-bottom: 10px;
+}
+
 /* formulario de contacto */
 
 form {
