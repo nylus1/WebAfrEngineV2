@@ -50,11 +50,6 @@ span {
     color: red;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: white;
-    font-size: 30px;
-}
-
 .bg-dark {
     background-color: #212121 !important;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15) !important;
@@ -64,7 +59,6 @@ span {
 .transition-025 {
     transition-duration: 0.25s;
 }
-
 
 /* formulario de contacto */
 

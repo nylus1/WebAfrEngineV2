@@ -24,3 +24,29 @@ function addClassToMobileHeadings() {
 
     window.addEventListener('resize', addClassToMobileHeadings);
 }
+
+function popItems() {
+
+    const popElements = document.querySelectorAll(".pop");
+
+    popElements.forEach(element => {
+        element.style.opacity = 0;
+    });
+
+    function showElementSmoothly(element) {
+        let opacity = 0;
+        const intervalId = setInterval(function () {
+            opacity += 0.05;
+            element.style.opacity = opacity;
+            if (opacity >= 1) {
+                clearInterval(intervalId);
+            }
+        }, 20);
+    }
+
+    setTimeout(function () {
+        popElements.forEach(element => {
+            showElementSmoothly(element);
+        });
+    }, 250);
+}
