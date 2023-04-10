@@ -8,7 +8,11 @@
     <title>AFR Engine</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-A60Yl5SNXmW/jJvuuKcFAmzG/bP/8cEeDvAlFbK2gBpb1XahbmU6rLxstzN/6auA+IGj7O4l+4sPTJlzeYsYg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style-animations.css" type="text/css">
     <link rel="icon" type="image/x-icon" href="img\FAVICON.png">
 </head>
 
@@ -72,19 +76,19 @@
         </div>
     </section>
     <section id="contacto-index">
-        <h2 class="text-center">¿Quieres contactarnos?</h2>
-        <p>¡Haz clic en el botón de abajo para ir a nuestra página de contacto!</p>
+        <h2 class="text-center zoom-in">¿Quieres contactarnos?</h2>
+        <p class="zoom-in">¡Haz clic en el botón de abajo para ir a nuestra página de contacto!</p>
         <a type="button" class="btn btn-danger btn-block mb-4" href="contacto.html">Contacto</a>
     </section>
 
     <section id="reviews-index">
-        <h2>Lo que dicen nuestros clientes</h2>
-        <div class="review">
+        <h2 class="zoom-in">Lo que dicen nuestros clientes</h2>
+        <div class="review slide-in-left">
             <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Review 1">
             <p>Excelente servicio al cliente. ¡Muy recomendado!</p>
             <p>- Juan Pérez</p>
         </div>
-        <div class="review">
+        <div class="review slide-in-right">
             <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Review 2">
             <p>Increíble calidad de productos. Volveré a comprar.</p>
             <p>- Ana Gutiérrez</p>
@@ -95,7 +99,9 @@
 
     </section>
 
-
+    <button id="backToTopBtn">
+        &#8593;
+    </button>
 
     <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS, iframe script -->
@@ -109,13 +115,14 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://tuning-shop.com/media/js/iframe-loader.js"></script>
-
+   
     <!-- Scripts importados en formato de función -->
     <script src="js/scripts.js"></script>
     <script src="js/cookies.js"></script>
     <script>navBar();</script>
     <script>addClassToMobileHeadings()</script>
     <script>popItems()</script>
+    <script>animateOnScroll()</script>
 
 </body>
 
@@ -124,7 +131,7 @@
     <div class="row text-center text-md-left">
         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
 
-            <img height="80" width="240" src="img/LOGOS SIN FONDO AFR ENGINE-11.png">
+            <img height="auto" width="240" src="img/LOGOS SIN FONDO AFR ENGINE-11.png">
             <p>AFR Engine es una empresa especializada en la reprogramación de centralitas, el mantenimiento y la
                 preparación de vehículos para competición.</p>
         </div>
@@ -166,7 +173,7 @@
         <hr class="mb-4">
         <div class="row align-items-center">
             <div class="col-md-7  col-lg-8">
-                <p>Copyright @2023 All rights reserved by:
+                <p>Copyright @2023 Todos los derechos reservados por:
                     <a href="#" style="text-decoration:none">
                         <Strong class="text-danger">AFR ENGINE</Strong>
 
