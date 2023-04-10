@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-<<<<<<< HEAD
-=======
+ HEAD
+
 html {
   scroll-behavior: smooth !important;
 }
@@ -148,6 +148,11 @@ span {
 .review p:first-child {
   margin-bottom: 10px;
 }
+ .faq{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 /* Formulario de contacto */
 
@@ -225,4 +230,4 @@ input[type="submit"]:hover {
 }
 
   
->>>>>>> 74ed47db9d7b9c281c4999e5ced8984999a21edb
+
