@@ -1,38 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 html {
-    scroll-behavior: smooth !important;
-
-}
-
-#img-text{
-    max-width: 50px;
-    max-height: 50px;
+  scroll-behavior: smooth !important;
 }
 
 body{
-    background: white;
-    color: #212121;
-    font-family: 'Montserrat', sans-serif;
+  background: white;
+  color: #212121;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .btn-danger{
-    color: #fff;
-    background-color: red;
-    border-color: red;
-    font-weight: bold;
-    letter-spacing: 0.75em;
-    border-radius: 5px;  
+  color: #fff;
+  background-color: red;
+  border-color: red;
+  font-weight: bold;
+  letter-spacing: 0.75em;
+  border-radius: 5px;  
 }
 
 header {
-    position: relative;
-    height: 200vh;
-    background-image: url("/mp4/bg_video.mp4");
-    min-height: 700px;
-    background-size: cover;
-    width: auto;
-    height: auto;
+  position: relative;
+  height: 200vh;
+  background-image: url("/mp4/bg_video.mp4");
+  min-height: 700px;
+  background-size: cover;
+  width: auto;
+  height: auto;
 }
 
 .bg-video {
@@ -53,16 +47,6 @@ header {
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
-
-  /* adjust the video size for smaller screens */
-  .bg-video {
-      width: 100vw;
-      height: 170vw;
-      /* 9:16 aspect ratio */
-  }
-}
-
 .overlay-container {
   position: absolute;
   top: 50%;
@@ -72,42 +56,19 @@ header {
   display: flex;
   align-items: center;
 }
+
 .h1-overlay {
   color: #fff;
   font-size: 3rem;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   margin-right: 10px;
 }
+
 .img-overlay {
   width: 250px;
   height: auto;
   margin-top: 30px;
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
-}
-
-@media screen and (max-width:1170px){
-  .overlay-container {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .h1-overlay {
-    font-size: 2rem;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-  .img-overlay {
-    margin-top: 0;
-  }
-  .overlay-container {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 480px) {
-  .h1-overlay {
-    font-size: 1.5rem;
-  }
 }
 
 #backToTopBtn {
@@ -129,6 +90,7 @@ header {
 #backToTopBtn:hover {
   opacity: 1;
   cursor: pointer;
+  background-color: red;
 }
 
 span {
@@ -136,13 +98,13 @@ span {
 }
 
 .bg-dark {
-    background-color: #212121 !important;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15) !important;
-    transition-duration: 0.25s;
+  background-color: #212121 !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15) !important;
+  transition-duration: 0.25s;
 }
 
 .transition-025 {
-    transition-duration: 0.25s;
+  transition-duration: 0.25s;
 }
 
 #contacto-index{
@@ -151,6 +113,8 @@ span {
   text-align: center;
   padding: 50px;
 }
+
+/* Reviews index */
 
 #reviews-index{
   background-color: white;
@@ -177,55 +141,85 @@ span {
   margin-right: 10px;
   border-radius: 50%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-
 }
 
 .review p:first-child {
   margin-bottom: 10px;
 }
 
-/* formulario de contacto */
+/* Formulario de contacto */
 
 form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 1rem;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  }
-  
-  label, input, select, textarea {
-    margin-bottom: 1rem;
-  }
-  
-  label {
-    font-weight: bold;
-  }
-  
-  input, select, textarea {
-    padding: 0.5rem;
-    border-radius: 3px;
-    border: none;
-  }
-  
-  input[type="submit"] {
-    background-color: red;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: rgb(168, 0, 0);
-  }
-  
-  /* Set up responsive styles */
-  @media screen and (max-width: 600px) {
-    form {
-      max-width: 95%;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+label, input, select, textarea {
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select, textarea {
+  padding: 0.5rem;
+  border-radius: 3px;
+  border: none;
+}
+
+input[type="submit"] {
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(168, 0, 0);
+}
+
+/* Media querys */
+@media screen and (max-width:1170px){
+    .overlay-container {
+      flex-direction: column;
     }
+}
+  
+  @media screen and (max-width: 768px) {
+    .h1-overlay {
+      font-size: 2rem;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    .img-overlay {
+      margin-top: 0;
+    }
+    .overlay-container {
+      flex-direction: column;
+    }
+    .bg-video {
+      width: 100vw;
+      height: 170vw;
   }
+}
+
+@media screen and (max-width: 480px) {
+  .h1-overlay {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    max-width: 95%;
+  }
+}
+
   
