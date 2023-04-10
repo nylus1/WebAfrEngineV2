@@ -6,143 +6,222 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AFR Engine</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-A60Yl5SNXmW/jJvuuKcFAmzG/bP/8cEeDvAlFbK2gBpb1XahbmU6rLxstzN/6auA+IGj7O4l+4sPTJlzeYsYg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" src="style.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style-animations.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="img\FAVICON.png">
 </head>
 
-<nav>
+<body class="pop">
+    <header>
+        <!-- Video de inicio -->
+        <video class="bg-video-text" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="mp4/bg_video.mp4" type="video/mp4" />
+        </video>
+        <div class="overlay-container">
+            <h1 class="text-center h1-overlay">Bienvenido a</h1>
+            <img src="img/LOGOS SIN FONDO AFR ENGINE-11.png" alt="Image Description"
+                class="img-overlay mb-3">
+        </div>
+    </header>
 
-</nav>
 
-<body>
-    <div class="container">
-        
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/LOGOS SIN FONDO AFR ENGINE_ISOLOGO FORMA 2 copia 2.png" width="120" height="65"
+                    alt="AFR Engine">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="quiensomos.html">Quienes Somos</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">F.A.Q</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="introduction">
+
+        <h1 class="text-center mt-4">Especialistas en <span>reprogramación </span>de centralitas</h1>
+        <div class="container mt-4">
+            <p class="text-center">¿Estás buscando una solución personalizada para tu vehículo? ¡Tenemos justo lo que
+                necesitas! Tratamos tu vehículo a medida.</p>
+        </div>
+
+    </section>
+    <section id="ganancias-index">
+        <div class="container text-center">
+            <h2 class="text-center mb-4">Consulta tu ganancia en nuestra base de datos</h2>
+            <!-- <button class="btn btn-primary btn-block mb-4" type="submit" href="ganancias.html">AQUI</button> -->
+            <a type="button" class="btn btn-danger btn-block mb-4" href="ganancias.html">Ganancia</a>
+        </div>
+    </section>
+    <section id="contacto-index">
+        <h2 class="text-center zoom-in">¿Quieres contactarnos?</h2>
+        <p class="zoom-in">¡Haz clic en el botón de abajo para ir a nuestra página de contacto!</p>
+        <a type="button" class="btn btn-danger btn-block mb-4" href="contacto.html">Contacto</a>
+    </section>
+
+    <section id="reviews-index">
+        <h2 class="zoom-in">Lo que dicen nuestros clientes</h2>
+        <div class="review slide-in-left">
+            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Review 1">
+            <p>Todo muy bien, amabilidad, rapidez y buen precio. Volveré si lo necesito.</p>
+            <p>- Pepe Azcona</p>
+        </div>
+        <div class="review slide-in-right">
+            <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Review 2">
+            <p>Hice una Stage 1 con Ignacio, trato amable y servicio rápido, el coche va ahora mucho mejor, mejor respuesta y respetando los consumos originales. Recomendado!</p>
+            <p>- David Fernandez</p>
+        </div>
+        <div class="review slide-in-left">
+            <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Review 3">
+            <p>Perfecto trato y servicio, sin duda, volvere a trabajar con ellos y dejar mi coche en sus manos!</p>
+            <p>- Victor Exposito</p>
+        </div>
+    </section>
+
+    <section id="marcas">
+
+    </section>
+
+    <button id="backToTopBtn">
+        &#8593;
+    </button>
+
+    <!-- JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, iframe script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://tuning-shop.com/media/js/iframe-loader.js"></script>
+   
+    <!-- Scripts importados en formato de función -->
+    <script src="js/scripts.js"></script>
+    <script src="js/cookies.js"></script>
+    <script>navBar();</script>
+    <script>addClassToMobileHeadings()</script>
+    <script>popItems()</script>
+    <script>animateOnScroll()</script>
+
+</body>
+
+<footer class="bg-dark text-white pt-5 pb-4">
+<div class="container text-center text-md-left">
+    <div class="row text-center text-md-left">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+
+            <img height="auto" width="240" src="img/LOGOS SIN FONDO AFR ENGINE-11.png">
+            <p>AFR Engine es una empresa especializada en la reprogramación de centralitas, el mantenimiento y la
+                preparación de vehículos para competición.</p>
+        </div>
+
+            <div class="cold-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Links</h5>
+
+                <p>
+                    <a href="quiensomos.html" class="text-white" style="text-decoration: none;">Quien Somos</a>
+                </p>
+
+                <p>
+                    <a href="contacto.html" class="text-white" style="text-decoration: none;">Contacto</a>
+                </p>
+
+                <p>
+                    <a href="faq.html" class="text-white" style="text-decoration: none;">F.A.Q</a>
+                </p>
+
+                <p>
+                    <a href="ganancias.html" class="text-white" style="text-decoration: none;">Calcula tu ganancia</a>
+                </p>
+
+
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Contacto</h5>
+                <p>
+                    <i class="fas fa-home mr-1">Zaragoza, Ajedrea 13-15, Nave 18</i>
+                </p>
+
+                <p>
+                    <i class="fas fa-envelope mr-1">contacto@afrengine.es</i>
+                </p>
+            </div>
+        </div>
+
+        <hr class="mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-7  col-lg-8">
+                <p>Copyright @2023 Todos los derechos reservados por:
+                    <a href="#" style="text-decoration:none">
+                        <Strong class="text-danger">AFR ENGINE</Strong>
+
+                    </a>
+                </p>
+            </div>
+            <div class="col-md-5 col-lg-4">
+
+                <div class="text-center text-md-right">
+                    <ul class="list-unistyled list-inline ">
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i
+                                    class="fab fa-facebook"></i></a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i
+                                    class="fab fa-twitter"></i></a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i
+                                    class="fab fa-google-plus"></i></a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i
+                                    class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
-    <footer class="bg-dark text-white pt-5 pb-4">
-    
-        
-        <div class="container text-center text-md-left">
-            <div class="row text-center text-md-left">
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    
-                    <h5 class="text-uppercase mb-4 font-wright-bold text-danger">AFR</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem fugit possimus
-                        quaerat vel et! Quibusdam, quos. Architecto sapiente, molestias laboriosam labore ut iusto
-                        recusandae, perspiciatis illo sed, esse cupiditate.</p>
-                </div>
-               
-    
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Productos</h5>
-                    <p>
-                        <a href="#" class="text-white" style="text-decoration: none;">Ejemplo</a>
-                    </p>
-    
-                    <p>
-                        <a href="#" class="text-white" style="text-decoration: none;">Ejemplo</a>
-                    </p>
-    
-                    <p>
-                        <a href="#" class="text-white" style="text-decoration: none;">Ejemplo</a>
-                    </p>
-    
-                    <p>
-                        <a href="#" class="text-white" style="text-decoration: none;">Ejemplo</a>
-                    </p>
-                </div>
-                <div class="cold-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Links</h5>
-    
-                    <p>
-                        <a href="#" class="text-white" style="text-decoration: none;">Ejemplo</a>
-                    </p>
-    
-                    <p>
-                        <a href="#" class="text-white" style="text-decoration: none;">Ejemplo</a>
-                    </p>
-    
-                    <p>
-                        <a href="#" class="text-white" style="text-decoration: none;">Ejemplo</a>
-                    </p>
-    
-                    <p>
-                        <a href="#" class="text-white" style="text-decoration: none;">Ejemplo</a>
-                    </p>
-    
-    
-                </div>
-    
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Contact</h5>
-                    <p>
-                        <i class="fas fa-home mr-3">Zaragoza , calle orla, 23</i>
-                    </p>
-    
-                    <p>
-                        <i class="fas fa-envelope mr-3">afr@gmail.com</i>
-                    </p>
-    
-                    <p>
-                        <i class="fas fa-phone mr-3">+92 657456783</i>
-                    </p>
-    
-                   
-    
-                </div>
-            </div>
-    
-           <hr class="mb-4">
-           <div class="row align-items-center">
-            <div class="col-md-7  col-lg-8">
-              <p>Copyright @2023 All rights reserved by:
-                <a href="#" style="text-decoration:none">
-                <Strong class="text-danger">AFR ENGINE</Strong>
-    
-                </a> </p>
-            </div>
-            <div class="col-md-5 col-lg-4">
-             
-           <div class="text-center text-md-right">
-            <ul class="list-unistyled list-inline ">
-                <li class="list-inline-item">
-                    <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i class="fab fa-facebook"></i></a>
-                </li>
-    
-                <li class="list-inline-item">
-                    <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i class="fab fa-twitter"></i></a>
-                </li>
-    
-                <li class="list-inline-item">
-                    <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i class="fab fa-linkedin-in"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i class="fab fa-google-plus"></i></a>
-                </li>
-    
-                <li class="list-inline-item">
-                    <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i class="fab fa-youtube"></i></a>
-                </li>
-            </ul>
-        
-           </div>
-    
-            </div>
-    
-           </div>
-    
-        </div>
-    
-    </footer>
-</body>
-
-
-
-
+</footer>
 
 </html>

@@ -1,1 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+<<<<<<< HEAD
+=======
+html {
+  scroll-behavior: smooth !important;
+}
+
+body{
+  background: white;
+  color: #212121;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-danger{
+  color: #fff;
+  background-color: red;
+  border-color: red;
+  font-weight: bold;
+  letter-spacing: 0.75em;
+  border-radius: 5px;  
+}
+
+header {
+  position: relative;
+  height: 200vh;
+  background-image: url("/mp4/bg_video.mp4");
+  min-height: 700px;
+  background-size: cover;
+  width: auto;
+  height: auto;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-video-text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.h1-overlay {
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
+}
+
+.img-overlay {
+  width: 250px;
+  height: auto;
+  margin-top: 30px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+#backToTopBtn {
+  opacity: 0.8;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #ee5454;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: opacity 0.2s ease-in-out
+}
+
+#backToTopBtn:hover {
+  opacity: 1;
+  cursor: pointer;
+  background-color: red;
+}
+
+span {
+    color: red;
+}
+
+.bg-dark {
+  background-color: #212121 !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15) !important;
+  transition-duration: 0.25s;
+}
+
+.transition-025 {
+  transition-duration: 0.25s;
+}
+
+#contacto-index{
+  background-color: #212121;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+/* Reviews index */
+
+#reviews-index{
+  background-color: white;
+  color: #212121;
+  text-align: center;
+  padding: 50px;
+}
+
+.review {
+  background-color: #212121;
+  color: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.review img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.review p:first-child {
+  margin-bottom: 10px;
+}
+
+/* Formulario de contacto */
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+label, input, select, textarea {
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select, textarea {
+  padding: 0.5rem;
+  border-radius: 3px;
+  border: none;
+}
+
+input[type="submit"] {
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(168, 0, 0);
+}
+
+/* Media querys */
+@media screen and (max-width:1170px){
+    .overlay-container {
+      flex-direction: column;
+    }
+}
+  
+  @media screen and (max-width: 768px) {
+    .h1-overlay {
+      font-size: 2rem;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    .img-overlay {
+      margin-top: 0;
+    }
+    .overlay-container {
+      flex-direction: column;
+    }
+    .bg-video {
+      width: 100vw;
+      height: 170vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .h1-overlay {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    max-width: 95%;
+  }
+}
+
+  
+>>>>>>> 74ed47db9d7b9c281c4999e5ced8984999a21edb
