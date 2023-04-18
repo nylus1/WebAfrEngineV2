@@ -56,7 +56,7 @@ function popItems() {
     }, 250);
 }
 
-// Boton volver arriba de la página
+//Boton volver arriba de la página
 
 function backToTop() {
     if (window.scrollY != 0) {
@@ -77,7 +77,7 @@ document.getElementById('backToTopBtn').addEventListener('click', function () {
     backToTop();
 });
 
-// Animaciones objetos, añadiendo la clase indicada
+//Animaciones objetos, añadiendo la clase indicada
 
 function animateOnScroll() {
     const elements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .zoom-in, .rotate-in');

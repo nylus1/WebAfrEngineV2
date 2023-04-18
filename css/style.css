@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+ HEAD
+
 html {
   scroll-behavior: smooth !important;
 }
@@ -146,6 +148,11 @@ span {
 .review p:first-child {
   margin-bottom: 10px;
 }
+ .faq{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 /* Formulario de contacto */
 
@@ -243,3 +250,4 @@ ul li::before {
 }
 
   
+
