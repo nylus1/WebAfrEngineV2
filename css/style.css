@@ -58,6 +58,16 @@ header {
   display: flex;
   align-items: center;
 }
+.overlay-container-largo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
 
 .h1-overlay {
   color: #fff;
@@ -70,6 +80,10 @@ header {
   width: 350px;
   height: auto;
   margin-top: 30px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+.img-overlay-h1 {
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
 }
 
@@ -229,18 +243,18 @@ input[type="submit"]:hover {
   }
 }
 
-#beneficios,ul, ol {
+.lista-reprogramaciones ul ol {
   list-style: none;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 1em;
 }
 
-li {
+.lista-reprogramaciones li {
   margin-bottom: 0.5em;
 }
 
-ul li::before {
+.lista-reprogramaciones ul li::before {
   content: '\2022';
   color: red;
   font-weight: bold;

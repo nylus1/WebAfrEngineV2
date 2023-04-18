@@ -19,10 +19,17 @@
 <body class="pop">
     <header>
         <!-- Video de inicio -->
-        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="mp4/bg_video2.mp4" type="video/mp4" />
+        <video class="bg-video-text" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="mp4/bg_video.mp4" type="video/mp4" />
         </video>
+        <div class="overlay-container-largo">
+            <div class="container mt-4">
+                <h1 class="h1-overlay mb-4" style="display: inline-block;">CALCULA TU GANANCIA</h1>
+                <img class="img-overlay-h1 mb-4"  style="display: inline-block" width="50" height="50" src="img/FAVICON.png">
+            </div>
+        </div>
     </header>
+
 
 
     <!-- NavBar -->
@@ -44,22 +51,20 @@
                     </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">F.A.Q</a>
+                        <a class="nav-link" href="faq.html">F.A.Q</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reprogramaciones.html">Reprogramaciones</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container intro-contacto mt-4">
-        <h1 style="display: inline-block">CALCULA TU GANANCIA</h1>
-        <img class="mb-3 ml-2" style="display: inline-block" width="50" height="50" src="img/FAVICON.png">
-    </div>
-
-    <div class="container mt-1">
+    <div class="container mt-4">
         <h2 class="text-center mb-4">Selecciona tu coche en la parte de abajo y te aparecera la ganancia que obtendrás, asi como mas información sobre tu modelo exacto de vehículo:</h2>
         <iframe src="https://tuning-shop.com/iframe/iframe.php?user=5942" width="100%" height="auto" scrolling="smooth"
             frameborder="0" style="border: 0;"></iframe>
