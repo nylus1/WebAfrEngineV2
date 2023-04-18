@@ -65,7 +65,7 @@ header {
 }
 
 .img-overlay {
-  width: 250px;
+  width: 350px;
   height: auto;
   margin-top: 30px;
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
@@ -220,6 +220,26 @@ input[type="submit"]:hover {
   form {
     max-width: 95%;
   }
+}
+
+#beneficios,ul, ol {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+ul li::before {
+  content: '\2022';
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
   
