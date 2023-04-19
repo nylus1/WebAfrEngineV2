@@ -9,7 +9,7 @@
 
 .slide-in-left {
   transform: translateX(-50%);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 .slide-in-left.active {
@@ -18,7 +18,7 @@
 
 .slide-in-right {
   transform: translateX(50%);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 .slide-in-right.active {
