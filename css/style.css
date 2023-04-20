@@ -10,23 +10,7 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
-.nav-link{
-  color: white !important;
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5)) !important;
-}
-
-.site-logo{
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5)) !important;
-}
-
-.btn-danger{
-  color: #fff;
-  background-color: red;
-  border-color: red;
-  font-weight: bold;
-  letter-spacing: 0.75em;
-  border-radius: 5px;  
-}
+/* Header */
 
 header {
   position: relative;
@@ -39,15 +23,6 @@ header {
 }
 
 .bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.bg-video-text{
   position: absolute;
   top: 0;
   left: 0;
@@ -56,43 +31,85 @@ header {
   object-fit: cover;
 }
 
+.bg-video-text{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
 .overlay-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  display: flex;
-  align-items: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1;
+display: flex;
+align-items: center;
 }
 .overlay-container-largo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  width: 100%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1;
+display: flex;
+align-items: center;
+width: 100%;
 }
 
 .h1-overlay {
-  color: #fff;
-  font-size: 3rem;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  margin-right: 10px;
+color: #fff;
+font-size: 3rem;
+text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+margin-right: 10px;
 }
 
 .img-overlay {
-  width: 350px;
-  height: auto;
-  margin-top: 30px;
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+width: 350px;
+height: auto;
+margin-top: 30px;
+filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
 }
 
 .img-overlay-h1 {
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
 }
+
+/* NavBar */
+
+.nav-link{
+  color: white !important;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5)) !important;
+}
+
+.site-logo{
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5)) !important;
+}
+
+.bg-dark {
+  background-color: #212121 !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15) !important;
+  transition-duration: 0.25s;
+}
+
+.transition-025 {
+  transition-duration: 0.25s;
+}
+
+/* Botones y links */
+
+.btn-danger{
+  color: #fff;
+  background-color: red;
+  border-color: red;
+  font-weight: bold;
+  letter-spacing: 0.75em;
+  border-radius: 5px;  
+}
+
 
 #backToTopBtn {
   opacity: 0.8;
@@ -116,19 +133,7 @@ header {
   background-color: red;
 }
 
-span {
-    color: red;
-}
-
-.bg-dark {
-  background-color: #212121 !important;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15) !important;
-  transition-duration: 0.25s;
-}
-
-.transition-025 {
-  transition-duration: 0.25s;
-}
+/* Sección contacto index */
 
 #contacto-index{
   background-color: #212121;
@@ -137,7 +142,7 @@ span {
   padding: 50px;
 }
 
-/* Reviews index */
+/* Sección Reviews index */
 
 #reviews-index{
   background-color: white;
@@ -213,6 +218,41 @@ input[type="submit"]:hover {
   background-color: rgb(168, 0, 0);
 }
 
+/* Página reprogramaciones.html */
+
+.lista-reprogramaciones ul ol {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.lista-reprogramaciones li {
+  margin-bottom: 0.5em;
+}
+
+.lista-reprogramaciones ul li::before {
+  content: '\2022';
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.lista-reprogramaciones li {
+  margin-bottom: 0.5em;
+}
+
+.lista-reprogramaciones ul li::before {
+  content: '\2022';
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
 /* Media querys */
 @media screen and (max-width:1170px){
     .overlay-container {
@@ -250,37 +290,6 @@ input[type="submit"]:hover {
   }
 }
 
-.lista-reprogramaciones ul ol {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 1em;
-}
 
-.lista-reprogramaciones li {
-  margin-bottom: 0.5em;
-}
-
-.lista-reprogramaciones ul li::before {
-  content: '\2022';
-  color: red;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-.lista-reprogramaciones li {
-  margin-bottom: 0.5em;
-}
-
-.lista-reprogramaciones ul li::before {
-  content: '\2022';
-  color: red;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
 
   

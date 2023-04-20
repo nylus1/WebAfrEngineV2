@@ -12,9 +12,6 @@ function navBar() {
     })
 }
 
-
-
-
 // Hotfix para que en formato móvil se muestren bien los titulos
 
 // function addClassToMobileHeadings() {
@@ -30,7 +27,6 @@ function navBar() {
 
 //     window.addEventListener('resize', addClassToMobileHeadings);
 // }
-
 
 
 // Animación para que aparezcan de primeras suave
