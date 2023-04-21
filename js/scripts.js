@@ -81,14 +81,14 @@ document.getElementById('backToTopBtn').addEventListener('click', function () {
 //Animaciones objetos, añadiendo la clase indicada
 
 function animateOnScroll() {
-    const elements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .zoom-in, .rotate-in');
+    const elements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .zoom-in, .rotate-in, .animate-from-bottom');
 
     elements.forEach(element => {
       const elementTop = element.getBoundingClientRect().top;
       const elementBottom = element.getBoundingClientRect().bottom;
 
       if (elementTop < window.innerHeight && elementBottom > 0) {
-        const animations = ['fade-in', 'slide-in-left', 'slide-in-right', 'zoom-in', 'rotate-in'];
+        const animations = ['fade-in', 'slide-in-left', 'slide-in-right', 'zoom-in', 'rotate-in', 'animate-from-bottom'];
         const randomAnimation = animations[Math.floor(Math.random() * animations.length)];
 
         element.classList.add('active', randomAnimation);
