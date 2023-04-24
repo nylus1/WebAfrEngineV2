@@ -264,6 +264,45 @@ input[type="submit"]:hover {
   margin-left: -1em;
 }
 
+.first-div-welcome{
+
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  
+
+
+}
+.img-welcome{
+  width: 50%;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+
+}
+
+.texto-welcome{
+
+  width: 50%;
+  float: left;
+
+}
+
+
+
+
+.welcome-img{
+  width: 60%;
+  
+ 
+}
+
+.welcome-texto{
+
+  /* float: left; */
+  
+}
+
 /* Media querys */
 
 @media screen and (max-width: 480px) {
