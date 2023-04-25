@@ -10,13 +10,26 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
+h2{
+  text-align: center;
+  font-size: 35px;
+}
+
+p{
+  font-size: 18px;
+}
+
+#introduction{
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
 /* Header */
 
 header {
   position: relative;
   height: 200vh;
   background-image: url("/mp4/bg_video.mp4");
-  min-height: 700px;
+  min-height: 500px;
   background-size: cover;
   width: auto;
   height: auto;
@@ -48,6 +61,7 @@ transform: translate(-50%, -50%);
 z-index: 1;
 display: flex;
 align-items: center;
+flex-direction: column;
 }
 .overlay-container-largo {
 position: absolute;
@@ -65,6 +79,12 @@ color: #fff;
 font-size: 3rem;
 text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 margin-right: 10px;
+font-weight: 600;
+}
+
+.overlay-container>p{
+color: white;
+text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .img-overlay {
@@ -269,38 +289,18 @@ input[type="submit"]:hover {
   display: flex;
   flex-direction: row;
   /* flex-wrap: wrap; */
-  
-
-
 }
+
 .img-welcome{
   width: 50%;
   height: auto;
   float: left;
   margin-right: 10px;
-
 }
 
 .texto-welcome{
-
   width: 50%;
   float: left;
-
-}
-
-
-
-
-.welcome-img{
-  width: 60%;
-  
- 
-}
-
-.welcome-texto{
-
-  /* float: left; */
-  
 }
 
 /* Media querys */
