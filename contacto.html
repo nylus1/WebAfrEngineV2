@@ -25,12 +25,11 @@
         <div class="overlay-container">
             <div class="container intro-contacto mt-4 text-center">
                 <h1 class="h1-overlay mb-4" style="display: inline-block;">CONTACTO</h1>
-                <img class="img-overlay-h1 mb-4" style="display: inline-block" width="50" height="50" src="img/FAVICON.png">
+                <img class="img-overlay-h1 mb-4" style="display: inline-block" width="50" height="50"
+                    src="img/FAVICON.png">
             </div>
         </div>
     </header>
-
-
 
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
@@ -66,82 +65,89 @@
 
     <section id="formulario-contacto">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="container intro-contacto mt-4">
-                <h3>Si tienes cualquier duda o deseas solicitar información, cubre el siguiente formulario y estaremos encantados de ayudarte.<br><br> Nuestro equipo de expertos estará encantado de ayudarte en todo lo que necesites. ¡Gracias por confiar en nosotros!</h3>
-              </div>
-      
-              <form class="container mt-4 mb-4" action="https://formsubmit.co/0909ba28e8436c528515caadbdeaacd3" method="POST">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-      
-                <label for="surname">Apellidos:</label>
-                <input type="text" id="surname" name="surname" required>
-      
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-      
-                <label for="stage">Selecciona una opción:</label>
-                <select id="stage" name="stage">
-                  <option value="stage1">Stage 1</option>
-                  <option value="stage2">Stage 2</option>
-                  <option value="stage3">Stage 3</option>
-                  <option value="other">Otros: (Antilag, Hardlaunch, Pops & Bangs...)</option>
-                </select>
-      
-                <label for="car-model">Modelo del vehículo:</label>
-                <input type="text" id="car-model" name="car-model" required>
-      
-                <label for="engine">Motorización:</label>
-                <input type="text" id="engine" name="engine" required>
-      
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-      
-                <input type="submit" class="submit-button" value="Enviar">
-      
-                <!-- API FORMSUBMIT -->
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://afrengine.es/">
-                <input type="hidden" name="_subject" value="Nuevo formulario de contacto en AFR Engine">
-                <input type="hidden" name="_autoresponse" value="Hemos recibido tu consulta, nos pondremos en contacto contigo lo antes posible.">
-                <input type="hidden" name="_template" value="table">
-              </form>
-            </div>
-      
-            <div class="col-lg-6">
-                <div class="container text-center mb-4">
-                    <h3 class="mt-4 mb-2">Encuéntranos en:</h3>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="container intro-contacto mt-4">
+                        <h3>Si tienes cualquier duda o deseas solicitar información, cubre el siguiente formulario y
+                            estaremos encantados de ayudarte.<br><br> Nuestro equipo de expertos estará encantado de
+                            ayudarte en todo lo que necesites. ¡Gracias por confiar en nosotros!</h3>
+                    </div>
+
+                    <form class="container mt-4 mb-4" action="https://formsubmit.co/0909ba28e8436c528515caadbdeaacd3"
+                        method="POST">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="surname">Apellidos:</label>
+                        <input type="text" id="surname" name="surname" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="stage">Selecciona una opción:</label>
+                        <select id="stage" name="stage">
+                            <option value="stage1">Stage 1</option>
+                            <option value="stage2">Stage 2</option>
+                            <option value="stage3">Stage 3</option>
+                            <option value="other">Otros: (Antilag, Hardlaunch, Pops & Bangs...)</option>
+                        </select>
+
+                        <label for="car-model">Modelo del vehículo:</label>
+                        <input type="text" id="car-model" name="car-model" required>
+
+                        <label for="engine">Motorización:</label>
+                        <input type="text" id="engine" name="engine" required>
+
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <input type="submit" class="submit-button" value="Enviar">
+
+                        <!-- API FORMSUBMIT -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://afrengine.es/">
+                        <input type="hidden" name="_subject" value="Nuevo formulario de contacto en AFR Engine">
+                        <input type="hidden" name="_autoresponse"
+                            value="Hemos recibido tu consulta, nos pondremos en contacto contigo lo antes posible.">
+                        <input type="hidden" name="_template" value="table">
+                    </form>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="container text-center mb-4">
+                        <h3 class="mt-4 mb-2">Encuéntranos en:</h3>
                         <div class="embed-responsive embed-responsive-16by9">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2984.759108933493!2d-0.8282200845683877!3d41.57445787924752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd593d9958fc49a3%3A0x4c82759bb426db53!2sAFR%20Engine!5e0!3m2!1ses!2ses!4v1681073158271!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2984.759108933493!2d-0.8282200845683877!3d41.57445787924752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd593d9958fc49a3%3A0x4c82759bb426db53!2sAFR%20Engine!5e0!3m2!1ses!2ses!4v1681073158271!5m2!1ses!2ses"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                </div>
-                <div class="container text-center">
-                    <div class="info-item">
-                        <h4>DIRECCIÓN:</h4>
-                        <p>Ajedrea 13-15, Nave 18<br>Zaragoza, 50720</p>
                     </div>
-    
-                    <div class="info-item">
-                        <h4>HORARIO:</h4>
-                        <p>Lunes a Viernes de 9:00-17:00</p>
-                    </div>
-    
-                    <div class="info-item">
-                        <h4>REDES SOCIALES:</h4>
-                        <a href="https://www.instagram.com/afr_engine/" target="_blank" class="instagram-btn">
-                            <i class="fa-brands fa-instagram"></i>
+                    <div class="container text-center">
+                        <div class="info-item">
+                            <h4>DIRECCIÓN:</h4>
+                            <p>Ajedrea 13-15, Nave 18<br>Zaragoza, 50720</p>
+                        </div>
+
+                        <div class="info-item">
+                            <h4>HORARIO:</h4>
+                            <p>Lunes a Viernes de 9:00-17:00</p>
+                        </div>
+
+                        <div class="info-item">
+                            <h4>REDES SOCIALES:</h4>
+                            <a href="https://www.instagram.com/afr_engine/" target="_blank" class="instagram-btn">
+                                <i class="fa-brands fa-instagram"></i>
                                 Instagram
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
-        </section>
-<button id="backToTopBtn">
-    &#8593;
-</button>
+    </section>
+    <button id="backToTopBtn">
+        &#8593;
+    </button>
 
     <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS, iframe script, font awesome... -->
@@ -171,93 +177,93 @@
     <div class="container text-center text-md-left">
         <div class="row text-center text-md-left">
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-    
+
                 <img height="auto" width="240" src="img/LOGOS SIN FONDO AFR ENGINE-11.png">
                 <p>AFR Engine es una empresa especializada en la reprogramación de centralitas, el mantenimiento y la
                     preparación de vehículos para competición.</p>
             </div>
-    
-                <div class="cold-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Links</h5>
-    
-                    <p>
-                        <a href="quiensomos.html" class="text-white" style="text-decoration: none;">Quien Somos</a>
-                    </p>
-    
-                    <p>
-                        <a href="contacto.html" class="text-white" style="text-decoration: none;">Contacto</a>
-                    </p>
-    
-                    <p>
-                        <a href="faq.html" class="text-white" style="text-decoration: none;">F.A.Q</a>
-                    </p>
-    
-                    <p>
-                        <a href="ganancias.html" class="text-white" style="text-decoration: none;">Calcula tu ganancia</a>
-                    </p>
-    
-    
-                </div>
-    
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Contacto</h5>
-                    <p>
-                        <i class="fas fa-home mr-1">Zaragoza, Ajedrea 13-15, Nave 18</i>
-                    </p>
-    
-                    <p>
-                        <i class="fas fa-envelope mr-1">contacto@afrengine.es</i>
-                    </p>
-                </div>
+
+            <div class="cold-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Links</h5>
+
+                <p>
+                    <a href="quiensomos.html" class="text-white" style="text-decoration: none;">Quien Somos</a>
+                </p>
+
+                <p>
+                    <a href="contacto.html" class="text-white" style="text-decoration: none;">Contacto</a>
+                </p>
+
+                <p>
+                    <a href="faq.html" class="text-white" style="text-decoration: none;">F.A.Q</a>
+                </p>
+
+                <p>
+                    <a href="ganancias.html" class="text-white" style="text-decoration: none;">Calcula tu ganancia</a>
+                </p>
+
+
             </div>
-    
-            <hr class="mb-4">
-            <div class="row align-items-center">
-                <div class="col-md-7  col-lg-8">
-                    <p>Copyright @2023 Todos los derechos reservados por:
-                        <a href="#" style="text-decoration:none">
-                            <Strong class="text-danger">AFR ENGINE</Strong>
-    
-                        </a>
-                    </p>
-                </div>
-                <div class="col-md-5 col-lg-4">
-    
-                    <div class="text-center text-md-right">
-                        <ul class="list-unistyled list-inline ">
-                            <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i
-                                        class="fab fa-facebook"></i></a>
-                            </li>
-    
-                            <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i
-                                        class="fab fa-twitter"></i></a>
-                            </li>
-    
-                            <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i
-                                        class="fab fa-linkedin-in"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i
-                                        class="fab fa-google-plus"></i></a>
-                            </li>
-    
-                            <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i
-                                        class="fab fa-youtube"></i></a>
-                            </li>
-                        </ul>
-    
-                    </div>
-    
-                </div>
-    
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Contacto</h5>
+                <p>
+                    <i class="fas fa-home mr-1">Zaragoza, Ajedrea 13-15, Nave 18</i>
+                </p>
+
+                <p>
+                    <i class="fas fa-envelope mr-1">contacto@afrengine.es</i>
+                </p>
             </div>
-    
         </div>
-    
-    </footer>
-    
-    </html>
+
+        <hr class="mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-7  col-lg-8">
+                <p>Copyright @2023 Todos los derechos reservados por:
+                    <a href="#" style="text-decoration:none">
+                        <Strong class="text-danger">AFR ENGINE</Strong>
+
+                    </a>
+                </p>
+            </div>
+            <div class="col-md-5 col-lg-4">
+
+                <div class="text-center text-md-right">
+                    <ul class="list-unistyled list-inline ">
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i
+                                    class="fab fa-facebook"></i></a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i
+                                    class="fab fa-twitter"></i></a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i
+                                    class="fab fa-google-plus"></i></a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px ;"><i
+                                    class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</html>
