@@ -1,5 +1,3 @@
-// Animación barra de navegación
-
 function navBar() {
   var nav = document.querySelector("nav");
   window.addEventListener("scroll", function () {
@@ -28,8 +26,6 @@ function navBar() {
 //     window.addEventListener('resize', addClassToMobileHeadings);
 // }
 
-// Animación para que aparezcan de primeras suave
-
 function popItems() {
   const popElements = document.querySelectorAll(".pop");
 
@@ -55,8 +51,6 @@ function popItems() {
   }, 250);
 }
 
-//Boton volver arriba de la página
-
 function backToTop() {
   if (window.scrollY != 0) {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -76,7 +70,6 @@ document.getElementById("backToTopBtn").addEventListener("click", function () {
   backToTop();
 });
 
-//Animaciones objetos, añadiendo la clase indicada
 
 function animateOnScroll() {
   const elements = document.querySelectorAll(
