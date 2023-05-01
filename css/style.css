@@ -304,7 +304,7 @@ input[type="submit"]:hover {
 }
 
 .contenedor {
-  max-width: 1500px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
@@ -316,7 +316,9 @@ input[type="submit"]:hover {
   margin: 0 -15px;
   box-sizing: border-box;
 }
-
+.rowhidden{
+margin: auto;
+}
 .col-6 {
   flex: 0 0 50%;
   max-width: 50%;
@@ -325,10 +327,13 @@ input[type="submit"]:hover {
 }
 
 img {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   margin-bottom: 15px;
   border-radius: 10px 10px;
+}
+p{
+  text-align: start;
 }
 
 @media screen and (max-width: 800px) {
@@ -408,6 +413,9 @@ h2{
   }
 }
 
+.text-div{
+  width: 30%;
+}
 
 
   
