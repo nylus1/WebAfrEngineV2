@@ -579,51 +579,59 @@ h2 {
 
 /*footer*/
 
-.preguntas {
-
-  padding-left: 150px;
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 50px 0;
 }
 
-.contacto {
-
-  padding-left: 80px;
-}
-
-.lego {
-
-  padding-right: 20px;
-  padding-top: 140px;
+footer img {
   max-width: 100%;
-  max-height: 100%;
-
+  height: auto;
 }
 
-.p-footer {
-
-  cursor: pointer;
+footer h5 {
+  color: #d43f3a;
+  font-weight: bold;
 }
 
-.p-footer:hover {
-  color: #ff7f7f;
-  /* color rojo claro en hover */
+footer ul {
+  list-style: none;
+  padding: 0;
 }
 
-@media (max-width: 1016px) {
+footer ul li {
+  margin-bottom: 10px;
+}
 
-  /* Estilo para dispositivos móviles y tabletas con pantalla de hasta 1000px */
-  .preguntas,
-  .contacto,
-  .lego {
-    padding: 0;
+footer ul li i {
+  margin-right: 10px;
+}
+
+.footer-links a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  footer {
+      text-align: center;
   }
-  h5{
-    margin-top: 10px;
-  }
-  .frecuentes {
-    margin-top: 10px;
-    
 
+  footer div[class*="col-"] {
+      margin-bottom: 30px;
   }
+
+  footer .footer-links {
+      margin-top: 30px;
+  }
+
+  footer .footer-links a {
+      display: block;
+      margin-bottom: 10px;
+  }
+
+
 }
-
-
