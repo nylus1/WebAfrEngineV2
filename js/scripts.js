@@ -61,6 +61,7 @@ window.addEventListener("scroll", function () {
   const backToTopBtn = document.getElementById("backToTopBtn");
   if (window.scrollY > 400) {
     backToTopBtn.style.display = "block";
+    backToTopBtn.style.zIndex = "9999"; //Hotfix no se podia clickar en el footer
   } else {
     backToTopBtn.style.display = "none";
   }

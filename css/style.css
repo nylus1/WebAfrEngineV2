@@ -7,7 +7,7 @@ html {
 body {
   background: white;
   color: #212121;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 h3 {
@@ -95,8 +95,22 @@ p {
 }
 
 .img-icon {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
   width: 4em;
+  height: auto;
+}
+
+.img-icon2 {
+  margin-top: 50px;
+  width: 4em;
+  height: auto;
+}
+
+.img-icon3 {
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 5em;
   height: auto;
 }
 
@@ -266,6 +280,10 @@ header {
   /* set icon color */
   margin-right: 5px;
   /* add spacing between icon and text */
+}
+
+.palito {
+  filter: brightness(75%) saturate(200%) hue-rotate(0deg);
 }
 
 /* Sección contacto index */
@@ -438,6 +456,7 @@ input[type="submit"]:hover {
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 img {
   max-width: 100%;
   height: auto;
@@ -448,6 +467,8 @@ img {
 p {
   text-align: start;
 }
+=======
+>>>>>>> 674dee475f8cf5456501e71a85c9e21b6ac438e7
 
 @media screen and (max-width: 800px) {
 
@@ -459,9 +480,12 @@ p {
     display: none;
   }
 
+<<<<<<< HEAD
   img {
     max-width: 50%;
   }
+=======
+>>>>>>> 674dee475f8cf5456501e71a85c9e21b6ac438e7
 }
 
 @media screen and (min-width: 800px) {
@@ -480,6 +504,7 @@ p {
   justify-content: center;
 }
 
+<<<<<<< HEAD
 p {
   margin-top: 50px;
 }
@@ -488,6 +513,8 @@ h2 {
   margin-top: 50px;
   text-align: center;
 }
+=======
+>>>>>>> 674dee475f8cf5456501e71a85c9e21b6ac438e7
 
 /* Media querys */
 
@@ -505,7 +532,7 @@ h2 {
 
 @media screen and (max-width: 768px) {
   .h1-overlay {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-right: 0;
     margin-bottom: 20px;
   }
@@ -525,10 +552,11 @@ h2 {
 
   .image-box {
     width: 100%;
-    padding-bottom: 50%;
+    margin-bottom: 48px !important;
   }
 }
 
+<<<<<<< HEAD
 
 .text-div {
   width: 30%;
@@ -537,12 +565,19 @@ h2 {
 
 
 
+=======
+.text-div{
+  width: 30%;
+}
+
+>>>>>>> 674dee475f8cf5456501e71a85c9e21b6ac438e7
 @media screen and (max-width:1170px) {
   .overlay-container {
     flex-direction: column;
   }
 }
 
+<<<<<<< HEAD
 /*footer*/
 
 .preguntas {
@@ -590,3 +625,5 @@ h2 {
 
   }
 }
+=======
+>>>>>>> 674dee475f8cf5456501e71a85c9e21b6ac438e7
