@@ -282,6 +282,10 @@ header {
   /* add spacing between icon and text */
 }
 
+.palito {
+  filter: brightness(75%) saturate(200%) hue-rotate(0deg);
+}
+
 /* Sección contacto index */
 
 #contacto-index {
@@ -461,9 +465,6 @@ margin: auto;
       display: none;
   }
 
-  img{
-      max-width: 50%;
-  }
 }
 
 @media screen and (min-width: 800px) {
@@ -499,7 +500,7 @@ margin: auto;
 
 @media screen and (max-width: 768px) {
   .h1-overlay {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-right: 0;
     margin-bottom: 20px;
   }
@@ -519,7 +520,7 @@ margin: auto;
 
   .image-box {
     width: 100%;
-    padding-bottom: 50%;
+    margin-bottom: 48px !important;
   }
 }
 
