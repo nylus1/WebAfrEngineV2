@@ -467,8 +467,8 @@ img {
 p {
   text-align: start;
 }
-=======
->>>>>>> 674dee475f8cf5456501e71a85c9e21b6ac438e7
+
+
 
 @media screen and (max-width: 800px) {
 
@@ -480,12 +480,11 @@ p {
     display: none;
   }
 
-<<<<<<< HEAD
+
   img {
     max-width: 50%;
   }
-=======
->>>>>>> 674dee475f8cf5456501e71a85c9e21b6ac438e7
+
 }
 
 @media screen and (min-width: 800px) {
@@ -504,7 +503,7 @@ p {
   justify-content: center;
 }
 
-<<<<<<< HEAD
+
 p {
   margin-top: 50px;
 }
@@ -513,8 +512,8 @@ h2 {
   margin-top: 50px;
   text-align: center;
 }
-=======
->>>>>>> 674dee475f8cf5456501e71a85c9e21b6ac438e7
+
+
 
 /* Media querys */
 
@@ -556,7 +555,7 @@ h2 {
   }
 }
 
-<<<<<<< HEAD
+
 
 .text-div {
   width: 30%;
@@ -565,19 +564,19 @@ h2 {
 
 
 
-=======
+
 .text-div{
   width: 30%;
 }
 
->>>>>>> 674dee475f8cf5456501e71a85c9e21b6ac438e7
+
 @media screen and (max-width:1170px) {
   .overlay-container {
     flex-direction: column;
   }
 }
 
-<<<<<<< HEAD
+
 /*footer*/
 
 .preguntas {
@@ -622,8 +621,9 @@ h2 {
   }
   .frecuentes {
     margin-top: 10px;
+    
 
   }
 }
-=======
->>>>>>> 674dee475f8cf5456501e71a85c9e21b6ac438e7
+
+
