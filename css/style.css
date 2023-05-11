@@ -418,7 +418,7 @@ input[type="submit"]:hover {
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
-} 
+}
 
 .row {
   display: flex;
@@ -426,9 +426,11 @@ input[type="submit"]:hover {
   margin: 0 -15px;
   box-sizing: border-box;
 }
-.rowhidden{
-margin: auto;
+
+.rowhidden {
+  margin: auto;
 }
+
 .col-6 {
   flex: 0 0 50%;
   max-width: 50%;
@@ -442,29 +444,30 @@ img {
   margin-bottom: 15px;
   border-radius: 10px 10px;
 }
-p{
+
+p {
   text-align: start;
 }
 
 @media screen and (max-width: 800px) {
 
   .colmovil {
-      display: block;
+    display: block;
   }
 
   .hidden {
-      display: none;
+    display: none;
   }
 
-  img{
-      max-width: 50%;
+  img {
+    max-width: 50%;
   }
 }
 
 @media screen and (min-width: 800px) {
 
   .colmovil {
-      display: none;
+    display: none;
   }
 }
 
@@ -472,15 +475,16 @@ p{
   text-align: center;
 }
 
-.img-somos{
+.img-somos {
   display: flex;
   justify-content: center;
 }
 
-p{
+p {
   margin-top: 50px;
 }
-h2{
+
+h2 {
   margin-top: 50px;
   text-align: center;
 }
@@ -525,17 +529,64 @@ h2{
   }
 }
 
-<<<<<<< HEAD
-.text-div{
+
+.text-div {
   width: 30%;
 }
 
 
-  
-=======
+
+
 @media screen and (max-width:1170px) {
   .overlay-container {
     flex-direction: column;
   }
 }
->>>>>>> 717dd11df37f0708c1815ee5cc3a7664a1c56f46
+
+/*footer*/
+
+.preguntas {
+
+  padding-left: 150px;
+}
+
+.contacto {
+
+  padding-left: 80px;
+}
+
+.lego {
+
+  padding-right: 20px;
+  padding-top: 140px;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+.p-footer {
+
+  cursor: pointer;
+}
+
+.p-footer:hover {
+  color: #ff7f7f;
+  /* color rojo claro en hover */
+}
+
+@media (max-width: 1016px) {
+
+  /* Estilo para dispositivos móviles y tabletas con pantalla de hasta 1000px */
+  .preguntas,
+  .contacto,
+  .lego {
+    padding: 0;
+  }
+  h5{
+    margin-top: 10px;
+  }
+  .frecuentes {
+    margin-top: 10px;
+
+  }
+}
