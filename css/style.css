@@ -456,7 +456,7 @@ input[type="submit"]:hover {
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
+
 img {
   max-width: 100%;
   height: auto;
@@ -469,8 +469,8 @@ p {
 }
 
 
-
-@media screen and (max-width: 800px) {
+/* quienes somos querys */
+@media screen and (max-width: 900px) {
 
   .colmovil {
     display: block;
@@ -482,12 +482,12 @@ p {
 
 
   img {
-    max-width: 50%;
+    max-width: 70%;
   }
 
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
 
   .colmovil {
     display: none;
