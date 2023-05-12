@@ -10,22 +10,6 @@ function navBar() {
   });
 }
 
-// Hotfix para que en formato móvil se muestren bien los titulos
-
-// function addClassToMobileHeadings() {
-
-//     const isMobileWidth = window.innerWidth <= 768;
-//     const h1 = document.getElementsByTagName('h1');
-
-//     if (isMobileWidth) {
-//         for (let i = 0; i < h1.length; i++) {
-//             h1[i].classList.remove('mt-4');
-//         }
-//     }
-
-//     window.addEventListener('resize', addClassToMobileHeadings);
-// }
-
 function popItems() {
   const popElements = document.querySelectorAll(".pop");
 
