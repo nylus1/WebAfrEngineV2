@@ -26,7 +26,7 @@ h2 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px !important;
 }
 
 #introduction {
@@ -77,13 +77,13 @@ p {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1390px;
 }
 
 .card {
   width: 300px;
   height: 325px;
-  margin: 10px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,6 +92,10 @@ p {
   background-color: #f9f9f9;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
 }
 
 .img-icon {
@@ -162,6 +166,7 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width:auto;
 }
 
 .overlay-container-largo {
@@ -197,6 +202,7 @@ header {
 
 .img-overlay-h1 {
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  padding-left: 10px;
 }
 
 /* NavBar */
@@ -288,7 +294,6 @@ header {
 }
 
 .palito {
-  filter: brightness(75%) saturate(200%) hue-rotate(0deg);
   width: 66px !important;
   height: 4px !important;
 }
@@ -304,6 +309,26 @@ header {
 
 /* Sección Reviews index */
 
+.review {
+  background-color: #212121;
+  color: white;
+  padding: 20px;
+  margin: 20px 20px auto;
+  max-width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.review:hover{
+  transform: scale(1.05);
+}
+
 #reviews-index {
   background-color: white;
   color: #212121;
@@ -311,17 +336,6 @@ header {
   padding: 50px;
 }
 
-.review {
-  background-color: #212121;
-  color: white;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 500px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-}
 
 .review img {
   width: 50px;
@@ -332,7 +346,7 @@ header {
 }
 
 .review p:first-child {
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 .faq {
@@ -384,6 +398,60 @@ input[type="submit"]:hover {
   background-color: rgb(168, 0, 0);
 }
 
+/* Sección index marcas */
+
+.container-marcas {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  max-width: 1920px;
+  margin: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 150px);
+  grid-gap: 75px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.grid-item {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item img {
+  max-width: 95%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: none;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: none;
+    margin-left: 30px;
+    margin-right: 30px;
+  }  
+  
+}
 /* Página reprogramaciones.html */
 
 .lista-reprogramaciones ul ol {
@@ -464,15 +532,20 @@ input[type="submit"]:hover {
 }
 
 
-img {
+.img-quiensomos{
   max-width: 100%;
   height: auto;
   margin-bottom: 15px;
   border-radius: 10px 10px;
 }
 
-p {
-  text-align: start;
+.movil-somos {
+  text-align: center;
+}
+
+.img-somos {
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -487,9 +560,10 @@ p {
     display: none;
   }
 
-
-  img {
-    max-width: 60%;
+  .img-quiensomosmovil {
+    max-width: 90%;
+    margin-bottom: 48px;
+    border-radius: 10px 10px;
   }
 
 }
@@ -499,25 +573,6 @@ p {
   .colmovil {
     display: none;
   }
-}
-
-.movil-somos {
-  text-align: center;
-}
-
-.img-somos {
-  display: flex;
-  justify-content: center;
-}
-
-
-p {
-  margin-top: 50px;
-}
-
-h2 {
-  margin-top: 50px;
-  text-align: center;
 }
 
 /* Media querys */
@@ -539,6 +594,11 @@ h2 {
     font-size: 2.5rem;
     margin-right: 0;
     margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  .faq-text{
+    padding-left: 95px;
   }
 
   .img-overlay {
@@ -547,6 +607,7 @@ h2 {
 
   .overlay-container {
     flex-direction: column;
+    width: 370px;
   }
 
   .bg-video {
@@ -558,6 +619,27 @@ h2 {
     width: 100%;
     margin-bottom: 48px !important;
   }
+  #introduction {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+
+  .review {
+    background-color: #212121;
+    color: white;
+    padding: 20px;
+    margin: 20px 20px auto;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
 }
 
 @media screen and (max-width:1170px) {
@@ -600,6 +682,15 @@ footer {
 .center-column {
   flex-basis: 30%;
   text-align: center;
+}
+
+.center-column img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 auto;
+  display: block;
 }
 
 .center-column h5 {
@@ -652,18 +743,11 @@ color: red;
   align-items: center;
 }
 
-.second-footer p {
-  font-size: 1rem;
-  margin: 0;
-}
-
 a:hover{
   color: red;
 }
 
-
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 850px) {
 	footer {
 		height: auto;
 		flex-direction: column;
@@ -677,14 +761,14 @@ a:hover{
 	}
 	
 	.center-column, .right-column {
-		margin-top: 48px;
+		margin-top: 24px;
     flex-grow: initial;
 		display: block;
-    margin-bottom: 24px;
+    margin-bottom: 48px;
 	}
 
   body > footer > div.left-column > img{
-    margin: 0 auto 1rem;
-    margin-top: 48px;
+    margin: 0 auto 0.5rem;
+    margin-top: 24px;
   }
 }
