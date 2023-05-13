@@ -68,16 +68,28 @@ p {
   color: #fff;
 }
 
+/* ganancia index */
+
+.ganancias-index{
+  background-image: url("http://afrengine.es/img/fondo-ganancias.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+
 /* Social proof section */
 
 #social-proof {
-  padding-top: 96px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   max-width: 1390px;
+  padding-bottom:98px;
 }
 
 .card {
@@ -233,6 +245,14 @@ header {
 
 /* Botones y links */
 
+body > footer > div.left-column.text-align > a > img{
+  transition: transform 0.3s ease;
+}
+
+body > footer > div.left-column.text-align > a > img:hover{
+  transform: scale(1.05);
+}
+
 .btn-danger {
   color: #fff;
   background-color: red;
@@ -241,6 +261,11 @@ header {
   letter-spacing: 0.75em;
   border-radius: 5px;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.btn-danger:hover{
+  transform: scale(1.05);
 }
 
 .btn-danger-small {
@@ -253,8 +278,12 @@ header {
   cursor: pointer;
   padding-left: 60px;
   padding-right: 60px;
+  transition: transform 0.3s ease;
 }
 
+.btn-danger-small:hover{
+  transform: scale(1.05);
+}
 
 #backToTopBtn {
   opacity: 0.8;
@@ -298,10 +327,20 @@ header {
   height: 4px !important;
 }
 
+a:hover{
+  transform: scale(1.05);
+}
+
+a{
+  transition: transform 0.3s ease;
+}
+
 /* Sección contacto index */
 
 #contacto-index {
-  background-color: #212121;
+  background-image: url("https://afrengine.es/img/fondo-contacto.jpg");
+  background-size: cover;
+  background-position: center;
   color: white;
   text-align: center;
   padding: 50px;
@@ -548,7 +587,14 @@ input[type="submit"]:hover {
   justify-content: center;
 }
 
+body > div:nth-child(3) > h2{
+font-weight: 600;
+}
 
+.reprogramaciones-quiensomos{
+  margin-top: 48px !important;
+  margin-bottom: 48px !important;
+}
 
 @media screen and (max-width: 900px) {
 
@@ -577,16 +623,20 @@ input[type="submit"]:hover {
 
 /* Media querys */
 
-@media screen and (max-width: 480px) {
-  .h1-overlay {
-    font-size: 1.5rem;
-  }
-}
 
 @media screen and (max-width: 600px) {
   form {
     max-width: 95%;
   }
+
+.customh1{
+  font-size: 1.5em !important;
+}
+
+body > div:nth-child(3) > h2{
+  font-size: 1.8em !important;
+}
+
 }
 
 @media screen and (max-width: 768px) {
@@ -594,7 +644,6 @@ input[type="submit"]:hover {
     font-size: 2.5rem;
     margin-right: 0;
     margin-bottom: 20px;
-    margin-left: 20px;
   }
 
   .faq-text{
@@ -638,7 +687,23 @@ input[type="submit"]:hover {
     align-items: center;
     text-align: center;
   }
-  
+
+  header {
+    position: relative;
+    height: 200vh;
+    min-height: 400px;
+    background-size: cover;
+    width: auto;
+    height: auto;
+  }
+  .ganancias-index{
+    background-position: 65%;
+    background-size: cover;
+  }
+
+  #contacto-index{
+    background-position: 47%;
+  }
   
 }
 
@@ -757,8 +822,24 @@ a:hover{
 	.left-column, .center-column, .right-column {
 		flex-basis: 100%;
 		text-align: center;
-		margin: 0;
+		margin-left: 10px;
+    margin-right: 10px;
 	}
+
+  body > footer > div.left-column.text-align > ul{
+    padding: 0;
+  }
+
+  body > footer > div.center-column > p:nth-child(5){
+    display: none;
+  }
+  body > footer > div.center-column > p:nth-child(6){
+    display: none;
+  }
+  body > footer > div.left-column.text-align > a > img{
+    margin-bottom: 24px;
+    margin-top: 14px;
+  }
 	
 	.center-column, .right-column {
 		margin-top: 24px;

@@ -28,7 +28,7 @@
         <video class="bg-video-text" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="mp4/bg_video.mp4" type="video/mp4" />
         </video>
-        <div class="overlay-container">
+        <div class="overlay-container mt-4">
             <h1 class="text-center h1-overlay">Descubre tu verdadero potencial <img class="img-overlay-h1 mb-2"
                     style="display: inline-block" width="50" height="50" src="img/FAVICON.png"></h1>
 
@@ -41,8 +41,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
         <div style="margin:0; padding:0;" class="container">
             <a class="navbar-brand" href="index.html">
-                <img class="site-logo" src="img/LOGOS SIN FONDO AFR ENGINE_ISOLOGO FORMA 2 copia 2.png" width="120"
-                    height="65" alt="AFR Engine">
+                <img src="img/LOGOS SIN FONDO AFR ENGINE_ISOLOGO FORMA 2 copia 2.png" width="120" height="65"
+                    alt="AFR Engine">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,16 +56,16 @@
                     </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="faq.html">F.A.Q</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="reprogramaciones.html">Reprogramaciones</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="ganancias.html">Ganancia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">F.A.Q</a>
                     </li>
                 </ul>
             </div>
@@ -110,12 +110,35 @@
         </div>
     </div>
 
-    <section id="ganancias-index">
-        <div class="container text-center zoom-in">
+    <section class="animate-from-bottom" id="social-proof">
+        <h2>Tu comodidad es lo primero</h2>
+        <figure class="container text-center"><img decoding="async" loading="lazy" width="66" height="4"
+                src="img/Linea-titulos.png" alt="" class="palito"></figure>
+
+        <div class="card">
+            <img class="img-icon" src="img\tranquilidad.png" alt="Card Image 1">
+            <h3>Tranquilidad</h3>
+            <p>Trabajamos con la última tecnologia disponible, para asegurarnos que todo queda perfecto.</p>
+        </div>
+        <div class="card">
+            <img class="img-icon2" src="img\asesoramiento.png" alt="Card Image 2">
+            <h3>Asesoramiento</h3>
+            <p>Realizamos una revisión previa para resolver todas tus dudas y adaptarnos a tus necesidades.</p>
+        </div>
+        <div class="card">
+            <img class="img-icon3" src="img\profesionalidad.png" alt="Card Image 3">
+            <h3>Profesionalidad</h3>
+            <p>Nuestro equipo profesional se asegurará de realizar una instalación de gran calidad.</p>
+        </div>
+    </section>
+
+    <section class="animate-from-bottom ganancias-index" id="ganancias-index">
+        <div class=" ganancias-div container text-center zoom-in">
             <h2 class="text-center mb-4">Consulta tu ganancia en nuestra base de datos</h2>
+            <figure class="container text-center"><img decoding="async" loading="lazy" width="66" height="4"
+                src="img/Linea-titulos.png" alt="" class="palito"></figure>
             <p>Y descubre el potencial de tu vehículo</p>
-            <a type="button" class="btn btn-danger btn-block mb-4 animate-from-bottom"
-                href="ganancias.html">Ganancia</a>
+            <a type="button" class="btn btn-danger btn-block mb-4" href="ganancias.html">Ganancia</a>
         </div>
     </section>
 
@@ -142,38 +165,18 @@
         </div>
     </section>
 
-    <section id="contacto-index">
+    <section class="animate-from-bottom" id="contacto-index">
+        <div class="container">
         <h2 class="text-center zoom-in">¿Quieres potenciar tu coche?</h2>
         <figure class="container text-center"><img decoding="async" loading="lazy" width="66" height="4"
                 src="img/Linea-titulos.png" alt="" class="palito"></figure>
-        <p class="zoom-in">¡Haz clic en el botón de abajo para ir a nuestra página de contacto!</p>
+        <p class="zoom-in">¡Haz clic en el botón de abajo para contactarnos!</p>
         <a type="button" class="btn btn-danger btn-block mb-4" href="contacto.html">Contacto</a>
-    </section>
-
-    <section class="animate-from-bottom" id="social-proof">
-        <h2>Tu comodidad es lo primero</h2>
-        <figure class="container text-center"><img decoding="async" loading="lazy" width="66" height="4"
-                src="img/Linea-titulos.png" alt="" class="palito"></figure>
-
-        <div class="card">
-            <img class="img-icon" src="img\tranquilidad.png" alt="Card Image 1">
-            <h3>Tranquilidad</h3>
-            <p>Trabajamos con la última tecnologia disponible, para asegurarnos que todo queda perfecto.</p>
-        </div>
-        <div class="card">
-            <img class="img-icon2" src="img\asesoramiento.png" alt="Card Image 2">
-            <h3>Asesoramiento</h3>
-            <p>Realizamos una revisión previa para resolver todas tus dudas y adaptarnos a tus necesidades.</p>
-        </div>
-        <div class="card">
-            <img class="img-icon3" src="img\profesionalidad.png" alt="Card Image 3">
-            <h3>Profesionalidad</h3>
-            <p>Nuestro equipo profesional se asegurará de realizar una instalación de gran calidad.</p>
-        </div>
+    </div>
     </section>
 
     <section id="marcas">
-        <div class=" container-marcas">
+        <div class="zoom-in container-marcas">
             <div class="grid-container">
                 <div class="grid-item">
                     <img src="img/marcas/alientech-rimappatura.png" alt="Imagen 1">
