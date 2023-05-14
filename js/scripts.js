@@ -1,5 +1,7 @@
 function navBar() {
   var nav = document.querySelector("nav");
+  var button = document.querySelector("body > nav > div > button");
+
   window.addEventListener("scroll", function () {
     if (window.pageYOffset > 100) {
       nav.classList.add("bg-dark", "shadow");
@@ -8,7 +10,15 @@ function navBar() {
       nav.classList.add("transition-025");
     }
   });
+
+  button.addEventListener("click", function() {
+    if (window.pageYOffset < 100) {
+      nav.classList.toggle("bg-dark");
+      nav.classList.add("transition-025");
+    }
+  });
 }
+
 
 function popItems() {
   const popElements = document.querySelectorAll(".pop");

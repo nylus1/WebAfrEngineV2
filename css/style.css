@@ -12,7 +12,7 @@ body {
 
 h3 {
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 h1 {
@@ -241,6 +241,10 @@ header {
 
 .transition-025 {
   transition-duration: 0.25s;
+}
+
+.navbar-brand{
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5)) !important;
 }
 
 /* Botones y links */
@@ -747,6 +751,7 @@ footer {
 .center-column {
   flex-basis: 30%;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .center-column img {
@@ -845,7 +850,7 @@ a:hover{
 		margin-top: 24px;
     flex-grow: initial;
 		display: block;
-    margin-bottom: 48px;
+    margin-bottom: 0;
 	}
 
   body > footer > div.left-column > img{
