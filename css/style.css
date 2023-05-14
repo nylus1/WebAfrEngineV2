@@ -648,6 +648,7 @@ body > div:nth-child(3) > h2{
     font-size: 2.5rem;
     margin-right: 0;
     margin-bottom: 20px;
+    width:300px ;
   }
 
   .faq-text{
@@ -714,7 +715,9 @@ body > div:nth-child(3) > h2{
 @media screen and (max-width:1170px) {
   .overlay-container {
     flex-direction: column;
+    max-width: fit-content;
   }
+
 }
 
 
