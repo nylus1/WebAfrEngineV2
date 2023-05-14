@@ -110,7 +110,7 @@
                         <label for="message">Mensaje:</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
 
-                        <input type="submit" class="submit-button" value="Enviar">
+                        <input type="submit" class="submit-button" value="Enviar" id="submit-button">
 
                         <!-- API FORMSUBMIT -->
                         <input type="hidden" name="_captcha" value="false">
@@ -186,6 +186,12 @@
     <script>addClassToMobileHeadings()</script>
     <script>popItems()</script>
     <script>animateOnScroll()</script>
+    <script>
+        const submitButton = document.getElementById('submit-button');
+        submitButton.addEventListener('click', function() {
+          submitButton.value = '¡Enviado!';
+        });
+    </script>
 
 </body>
 
