@@ -649,7 +649,6 @@ body > div:nth-child(3) > h2{
     margin-right: 0;
     margin-bottom: 20px;
   }
-
 /* 
   body > header > div > h1{
     width:340px ;
@@ -662,6 +661,7 @@ body > div:nth-child(3) > h2{
   .faq-text{
     padding-left: 95px;
   }
+  
 
   .img-overlay {
     margin-top: 0;
